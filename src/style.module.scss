@@ -1,0 +1,42 @@
+.todoBlock {
+  //   scale: 0;
+  //   animation: 1s open-todo forwards;
+  display: flex;
+  transform: translate(-50%);
+  top: 20%;
+  width: 100%;
+  position: absolute;
+  flex-direction: column;
+  left: 50%;
+}
+.textZone {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+}
+.noteBlock {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.noteElement {
+  width: 400px;
+}
+.noteElement textarea {
+  border: none;
+  text-overflow: initial;
+  width: 350px;
+  background-color: red;
+  height: 200px;
+}
+@keyframes open-todo {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
